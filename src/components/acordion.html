@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordion</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-slate-100 text-slate-800 dark:bg-slate-900 dark:text-slate-100">
+    <section class="container mx-auto max-w-screen-lg p-4">
+        <h1 class="text-4xl text-center mb-4">Accordion</h1>
+        
+
+        <div id="accordion" class="overflow-hidden">
+            <button type="button"
+             class="w-full flex justify-between p-4 border border-slate-400 bg-slate-200 text-slate-800
+                dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 
+                dark:focus:border-blue-500 dark:focus:text-blue-500
+                outline-none focus:text-blue-500 focus:border-blue-500 cursor-pointer"
+                >
+                Accordion
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div  
+                class="border border-slate-200 bg-slate-100 text-slate-700
+                dark:border-slate-800 dark:bg-slate-700 dark:text-slate-200
+                 h-0 transition-height">
+                <div class="p-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus unde nobis commodi odit esse facilis expedita doloremque ex. Magnam, quo. Alias nesciunt blanditiis nemo pariatur. Nisi voluptates porro ex.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi libero explicabo nemo, delectus autem cupiditate aspernatur doloribus debitis quod obcaecati ducimus nulla quaerat, iste officia beatae impedit molestias? Amet, atque.</p>
+                </div>
+            </div>
+        </div>
+
+       
+    </section>
+
+    <!-- <script src="../js/ui.js" defer></script> -->
+    <script src="../js/components.js"></script>
+    <script src="../js/main.js" defer></script>
+    <script>
+        const accordion = new Accordion('#accordion')
+
+        
+    </script>
+</body>
+</html>
